@@ -10,11 +10,11 @@
 <body>
     <div class="container">
         <div class="image">
-
+            <img src="imagens/background.svg" alt="background">
         </div>
         <main>
             <h1>Calculadora - IMC</h1>
-            <form action="">
+            <form>
                 <label for="weight">Peso em Kg</label>
                 <div id="input-weight">
                     <i class="fa-solid fa-weight-hanging"></i>
@@ -27,27 +27,26 @@
                     <input type="text" name="height" id="iheight">
                     <span>M</span>
                 </div>
-                <button type="submit">Calcular</button>   
+                <button id="submit" type="submit">Calcular</button>   
             </form>
-            <div id="infos">
+            <div id="infos" class="hide">
                 <div id="resul">
                     <div id="bmi">
-                        <span id="value">55.1</span>
-                        <span>Seu IMC</span>
+                        <span id="value"></span>
+                        <span></span>
                     </div>
                     <div id="description">
-                        <span>Você está no peso ideal</span>
+                        <span></span>
                     </div>
                 </div>
             </div>
             <footer>
                 <a href="#">Saiba mais sobre IMC
                     <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                </a>
-                
+                </a>               
             </footer>
         </main>
     </div>
-    
+    <script src="script.js"></script>
 </body>
 </html>
