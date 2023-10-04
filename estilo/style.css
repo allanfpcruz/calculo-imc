@@ -6,15 +6,18 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    height: 100vh;
+    background-color: #292828;
+}
+
 .image {
     display: none;
 }
 
 main {
-    height: 100vh;
     color: #ffffff;
     padding: 30px;
-    background-color: #292828;
 }
 
 h1 {
@@ -37,7 +40,7 @@ form {
 #iweight, #iheight {
     padding: 10px;
     font-size: 1.5em;
-    width: 70%;
+    width: 75%;
     background-color: #4b4a4a;
     border: none;
 }
@@ -57,7 +60,7 @@ form {
 }
 
 button {
-    width: 85vw;
+    width: 100%;
     padding: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -108,4 +111,36 @@ footer a:hover {
 
 .hide {
     display: none;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #4b4a4a;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .image {
+        display: flex;
+        width: 50%;
+        align-items: center;
+        gap: 3.5rem;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    main {
+        background-color: #292828;
+        border-radius: 5px;
+    }
 }
